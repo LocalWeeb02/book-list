@@ -1,0 +1,11 @@
+.booksComp { 
+    background-color: antiquewhite;
+    width: 49%;
+    float: left;
+}
+
+.bookCollComp {
+    background-color: rgb(160, 147, 172);
+    width: 49%;
+    float: right;
+}
