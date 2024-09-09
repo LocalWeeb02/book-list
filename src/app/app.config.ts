@@ -6,11 +6,10 @@ import { routes } from './app.routes';
 import { provideStore } from '@ngrx/store';
 import { booksReducer } from './state/books.reducer';
 import { collectionReducer } from './state/collection.reducer';
-import { HttpClientModule } from '@angular/common/http';
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    importProvidersFrom(HttpClientModule),
+    importProvidersFrom(),
     provideRouter(routes), 
     provideStore({
       books: booksReducer, 
